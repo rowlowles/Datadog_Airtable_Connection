@@ -1,0 +1,3 @@
+Airtable_api = abc123
+Datadog_api = def456
+Datadog_app = ghi789
