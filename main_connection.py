@@ -3,7 +3,6 @@ import re
 from airtable import airtable
 
 
-
 content = [line.rstrip('\n') for line in open('api_keys.txt')]
 key_list = {}
 for keys in content:
@@ -17,7 +16,6 @@ options = {'api_key': key_list['Datadog_api'],'app_key':key_list['Datadog_app']}
 initialize(**options)
 
 at = airtable.Airtable(key_list['Base_Key'],key_list['Airtable_api'])
-
 
 
 def checkUpdates():
