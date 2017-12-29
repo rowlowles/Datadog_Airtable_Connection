@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b668b8d9-0a2b-4fcc-96c9-7bab08fcffb4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_keys.txt" afterPath="$PROJECT_DIR$/api_keys.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_connection.py" afterPath="$PROJECT_DIR$/main_connection.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table_names.txt" afterPath="$PROJECT_DIR$/table_names.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +16,8 @@
       <file leaf-file-name="main_connection.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_connection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="43" column="80" lean-forward="true" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -110,11 +107,6 @@
               <item name="Datadog_Airtable_Connection" type="b2602c69:ProjectViewProjectNode" />
               <item name="Datadog_Airtable_Connection" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Datadog_Airtable_Connection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Datadog_Airtable_Connection" type="462c0819:PsiDirectoryNode" />
-              <item name="airtable" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -203,13 +195,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main_connection.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
@@ -283,8 +268,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_connection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="43" column="80" lean-forward="true" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

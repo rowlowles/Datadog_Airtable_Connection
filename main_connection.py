@@ -1,7 +1,7 @@
 from datadog import api, initialize
-import re
 from airtable import airtable
-
+import time
+import re
 
 content = [line.rstrip('\n') for line in open('api_keys.txt')]
 key_list = {}
@@ -27,21 +27,30 @@ def initial_setup():
 
 
 def check_airtable_updates():
+    # Note: Airtable API is limited to 5 calls/second. Exceeding it puts a 30 sec timeout on future calls.
+    # If possible, we want to avoid hitting that timeout.
     for table in table_names:
+        pre_call_time = time.time()
         size = at.get(table)['records'].__len__()
+
         diff = size - table_sizes[table]
-        if diff>0:
+        if diff > 0:
             # Post to Datadog that a row was created, update the table size
-            api.Event.create(title = str(diff) + " new rows in Airtable Created")
+            api.Event.create(title=str(diff) + " new rows in Airtable Created")
             table_sizes[table] = size
 
-        elif diff<0:
+        elif diff < 0:
             # Post to Datadog that a row was deleted, update the table size
-            api.Event.create(title= str(abs(diff)) + " rows in Airtable Deleted")
+            api.Event.create(title=str(abs(diff)) + " rows in Airtable Deleted")
             table_sizes[table] = size
 
         else:
             pass
+
+        post_call_time = time.time()
+        while (post_call_time - pre_call_time) <= .2:
+            time.sleep(.01)
+            post_call_time = time.time()
 
 
 def main():
