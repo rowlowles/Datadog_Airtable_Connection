@@ -1,4 +1,4 @@
-Airtable_api = abc123
-Base_key = qwert098
+Airtable_api = keyrSTZdH3yr8hwEq
+Base_key = appwjkhS4snzqk3YA
 Datadog_api = def456
 Datadog_app = ghi789

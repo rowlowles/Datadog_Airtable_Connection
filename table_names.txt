@@ -1,3 +1,2 @@
-Table_1
-Table_2
-Another_Example_Base
+Table 1
+Another Table
